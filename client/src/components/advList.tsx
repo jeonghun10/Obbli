@@ -1,5 +1,5 @@
 import React from "react";
-import AdvListItem from "./advListItem";
+import AdvListItem from "./AdvListItem";
 
 type ItemProps = {
     dummy:{

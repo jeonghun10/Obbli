@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 type ItemProps = {
     uuid:string,
@@ -10,7 +11,7 @@ const AdvListItem: React.FC<ItemProps> =  ({uuid, title, created_at}) => {
     return(
         <tr >
             <th>{uuid}</th>
-            <th>{title}</th>
+            <Link to={`/advert/${uuid}`} title={title}><th>{title}</th></Link>
             <th>{created_at}</th>
         </tr>
 

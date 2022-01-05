@@ -26,11 +26,11 @@ section {
 .advList {
     margin: 0px 20px;
     
-    width:60rem;
+    width:70rem;
     padding: 10px 20px;
 }
 .advListTable {
-    width:60rem;
+    width:70rem;
     
 }
 .advListTable thead {
@@ -39,14 +39,14 @@ section {
     color: white;
 }
 .advListTable tr th {
-    
+    border-radius: 5px;
     padding: 0px 40px;
     height: 30px;
     
 }
 
 .filter {
-    width:60rem;
+    width:70rem;
     margin: 0px 20px;
     padding: 10px 20px;
     
@@ -55,5 +55,44 @@ section {
 .filter ul li {
     display: inline-block;
     padding-left: 10px;
-    
+}
+
+.advView{
+    margin: 0px 20px;
+    width:70rem;
+    padding: 10px 20px;
+}
+.advViewTable {
+    width:70rem;
+}
+
+.advViewTable thead {
+    background-color: rgba(0, 0, 0, 0.803);
+    height: 30px;
+    color: white;
+}
+.advViewTable tr th {
+    border-radius: 5px;
+    padding: 0px 40px;
+    height: 30px;
+    white-space: pre-line;
+}
+table {
+    margin-bottom: 6rem;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.803);
+    color: white;
+    width:8rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: bold;
 }

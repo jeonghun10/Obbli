@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import AdvList from "../components/advList";
-import Filter from "../components/filter";
+import AdvList from "../components/AdvList";
+import Filter from "../components/Filter";
 
 
 const Advertise: React.FC =  () => {
