@@ -30,6 +30,7 @@ const AdvList: React.FC<ItemProps> =  (props:ItemProps) => {
                            
                 })}
             </table>
+           
             
             
         

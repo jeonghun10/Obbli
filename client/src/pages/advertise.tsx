@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AdvList from "../components/AdvList";
 import Filter from "../components/Filter";
-
+import {Link} from "react-router-dom"
 
 const Advertise: React.FC =  () => {
     const dummy = [
@@ -36,17 +36,17 @@ const Advertise: React.FC =  () => {
         },
     ]
 
-    const [isAdmin, setIsAdmin] = useState(false);
+    const [isAdmin, setIsAdmin] = useState(true);
 
     return(
-        <div>
+        <div className="advertise">
             <Filter/>
             {
                 dummy.length===0 ? <div>아직 작성된 글이 없습니다.</div> : <AdvList dummy = {dummy}/>
             }
             
             {
-                isAdmin ? <button type="button">작성하기</button> : null
+                isAdmin ? <Link to={`/advert/write`}><button className="advwritebtn" type="button">작성하기</button></Link> : null
             }
             
         </div>
