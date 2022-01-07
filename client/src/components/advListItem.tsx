@@ -11,7 +11,7 @@ const AdvListItem: React.FC<ItemProps> =  ({uuid, title, created_at}) => {
     return(
         <tr >
             <th>{uuid}</th>
-            <Link to={`/advert/${uuid}`} title={title}><th>{title}</th></Link>
+            <th><Link to={`/advert/${uuid}`}>{title}</Link></th>
             <th>{created_at}</th>
         </tr>
 

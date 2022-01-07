@@ -21,7 +21,7 @@ const AdvList: React.FC<ItemProps> =  (props:ItemProps) => {
                     <tr>
                         <th className="">글 번호</th>
                         <th>글 제목</th>
-                        <th>작성일</th>
+                        <th>모집 기한</th>
                         <th>비고</th>
                     </tr>
                 </thead>

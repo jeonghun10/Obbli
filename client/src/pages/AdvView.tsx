@@ -39,7 +39,7 @@ const AdvView : React.FC =  () => {
                         <th>{advInfo.content.adv_content}</th>
                         <th>{advInfo.content.position}</th>
                         <th>{advInfo.content.adv_created_at}</th>
-                        <th ><button type="button" className="btn">지원하기</button></th>
+                        <th><button type="button" className="btn">지원하기</button></th>
                     </tr>
             </table>
             <h3>Performance place</h3>
