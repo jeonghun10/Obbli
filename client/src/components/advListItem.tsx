@@ -3,16 +3,20 @@ import {Link} from "react-router-dom"
 
 type ItemProps = {
     uuid:string,
+    location:string,
+    org_name:string,
     title:string,
-    created_at:string
+    active_until:string
 }
 
-const AdvListItem: React.FC<ItemProps> =  ({uuid, title, created_at}) => {
+const AdvListItem: React.FC<ItemProps> =  ({uuid, location, org_name, title, active_until}) => {
     return(
         <tr >
-            <th>{uuid}</th>
-            <th><Link to={`/advert/${uuid}`}>{title}</Link></th>
-            <th>{created_at}</th>
+            <td>{location}</td>
+            <td>{org_name}</td>
+            <td><Link to={`/advert/${uuid}`}>{title}</Link></td>
+            <td>{active_until}</td>
+            <td></td>
         </tr>
 
 

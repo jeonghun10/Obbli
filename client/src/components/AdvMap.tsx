@@ -1,16 +1,16 @@
 import React, {useEffect} from "react";
 const  kakao  = (window as any).kakao;
 
-type ItemProps = {
+type AddressProps = {
     org_address:string
 }
 
 
-const AdvMap: React.FC<ItemProps> =  (props:ItemProps) => {
+const AdvMap: React.FC<AddressProps> =  (props:AddressProps) => {
 
     useEffect(() => {
         var infowindow = new kakao.maps.InfoWindow({zIndex:1});
-        const container = document.getElementById('advMap');
+        const container = document.querySelector('.location');
 		const options = {
 			center: new kakao.maps.LatLng(33.450701, 126.570667),
 			level: 3
@@ -63,15 +63,15 @@ const AdvMap: React.FC<ItemProps> =  (props:ItemProps) => {
     console.log(props.org_address)
 
     return(
-        
-            <div  id="advMap">
-      
-            
-                
-                
-            
-            </div>
-        
+        <div className="advMap">
+            <table className="advMapTable">
+                <thead >
+                    <th>공연 장소</th>
+                    <td>{props.org_address}</td>                        
+                </thead>
+            </table>
+            <div  className="location"></div>
+       </div>
         
         
 

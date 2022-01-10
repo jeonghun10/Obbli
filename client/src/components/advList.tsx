@@ -5,8 +5,10 @@ type ItemProps = {
     dummy:{
         uuid:string,
         content:{
+            location:string,
+            org_name:string,
             title:string,
-            created_at:string
+            active_until:string
         },
     }[]
 }
@@ -18,15 +20,14 @@ const AdvList: React.FC<ItemProps> =  (props:ItemProps) => {
             <h2>Adv</h2>
             <table className="advListTable">
                 <thead>
-                    <tr>
-                        <th className="">글 번호</th>
-                        <th>글 제목</th>
+                        <th>행사 장소</th>
+                        <th>업체 이름</th>
+                        <th>공고 제목</th>
                         <th>모집 기한</th>
                         <th>비고</th>
-                    </tr>
                 </thead>
                 {props.dummy.map((el)=>{
-                    return <AdvListItem uuid={el.uuid} title={el.content.title} created_at={el.content.created_at}></AdvListItem>
+                    return <AdvListItem uuid={el.uuid} location={el.content.location} org_name={el.content.org_name} title={el.content.title} active_until={el.content.active_until}></AdvListItem>
                            
                 })}
             </table>

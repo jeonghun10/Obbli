@@ -7,32 +7,33 @@ const Advertise: React.FC =  () => {
     const dummy = [
         {
             uuid : "1fa85f64-5717-4562-b3fc-2c963f66afa6",
-            content : {title:'title_test', created_at:'2022-01-03'}
+            content : {location:'서울시 마포구', org_name:'앙상블', title:'title_test1', active_until:'2022-01-03'}
             
         },
         {
-            uuid : "2fa85f64-1234-1111-b3fc-2c963f66afa6",
-            content : {title:'title_test2', created_at:'2022-01-04'}
+            uuid : "2fa85f64-5717-4562-b3fc-2c963f66afa6",
+            content : {location:'서울시 종로구', org_name:'요게', title:'title_test2', active_until:'2022-01-04'}
+            
         },
         {
-            uuid : "3fa85f64-3123-2222-b3fc-2c963f66afa6",
-            content : {title:'title_test3', created_at:'2022-01-05'}
+            uuid : "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+            content : {location:'서울시 관악구', org_name:'모자르트', title:'title_test3', active_until:'2022-01-05'}
+            
         },
         {
-            uuid : "4fa85f64-1234-3333-b3fc-2c963f66afa6",
-            content : {title:'title_test4', created_at:'2022-01-05'}
+            uuid : "4fa85f64-5717-4562-b3fc-2c963f66afa6",
+            content : {location:'서울시 서대문구', org_name:'베토벤', title:'title_test4', active_until:'2022-01-06'}
+            
         },
         {
-            uuid : "5fa85f64-3333-4444-b3fc-2c963f66afa6",
-            content : {title:'title_test5', created_at:'2022-01-05'}
+            uuid : "5fa85f64-5717-4562-b3fc-2c963f66afa6",
+            content : {location:'서울시 영등포구', org_name:'차이코프스키', title:'title_test5', active_until:'2022-01-07'}
+            
         },
         {
-            uuid : "6aa85f64-4444-5555-b3fc-2c963f66afa6",
-            content : {title:'title_test5', created_at:'2022-01-05'}
-        },
-        {
-            uuid : "5fa85f64-5555-6666-b3fc-2c963f66afa6",
-            content : {title:'title_test5', created_at:'2022-01-05'}
+            uuid : "6fa85f64-5717-4562-b3fc-2c963f66afa6",
+            content : {location:'서울시 마포구', org_name:'하모니', title:'title_test6', active_until:'2022-01-03'}
+            
         },
     ]
 
