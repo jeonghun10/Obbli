@@ -41,24 +41,42 @@ body {
 
 
 Table {
-    width:70rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    word-break: break-all;
 }
 Table thead {
-    background-color: rgba(0, 0, 0, 0.803);
+
     height: 30px;
-    color: white;
+    color: #036;
+    font-weight: bold;
+    border-bottom: 3px solid #036;
+    
+    
+    
 }
 
 Table tr td{
+    font-size: 14px;
     padding: 0px 30px;
     height: 35px;
     text-align: center;
+    border-bottom: 1px solid #ccc;
 }
 .advMapTable td{
     background-color: #fff;
     color: #000;
+    
 }
 
+.advViewTable {
+    table-layout: fixed;
+}
+
+.advViewTable .col1 {
+    width: 60%;
+}
 
 
 
@@ -120,17 +138,17 @@ Table tr td{
 
 
 button {
-    background-color: rgba(0, 0, 0, 0.803);
+    background-color: #036;
     color: white;
-    width:8rem;
-    border-radius: 10px;
+    width:7rem;
+    border-radius: 20px;
     font-size: 1rem;
     font-weight: bold;
 }
 
 button:hover {
     background-color: #fff;
-    color: #000;
+    color: #036;
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -156,4 +174,42 @@ input {
     border: 1px solid #000;
     margin-bottom: 4rem;
 }
-=======
+
+
+.pagination {
+    
+    text-align:center;
+}
+.pagination ul {
+  display:inline-block;
+  
+  text-align: center;
+  padding: 1px;
+
+  
+}
+
+.pagination ul li {
+    float: left;
+    list-style: none;
+    font-size: 17px;
+    padding: 5px;
+    width: 25px;
+    
+    
+}
+
+.pagination ul li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #036;
+
+}
+
+.pagination ul li:active {
+    color: white;
+    background-color: #036;
+}
+
+
+>>>>>>> 97c57c8 (client:Add advertise list page pagination)

@@ -64,12 +64,7 @@ const AdvMap: React.FC<AddressProps> =  (props:AddressProps) => {
 
     return(
         <div className="advMap">
-            <table className="advMapTable">
-                <thead >
-                    <th>공연 장소</th>
-                    <td>{props.org_address}</td>                        
-                </thead>
-            </table>
+            <div><span>공연 장소 : {props.org_address}</span></div>
             <div  className="location"></div>
        </div>
         

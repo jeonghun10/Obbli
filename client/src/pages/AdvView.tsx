@@ -29,11 +29,13 @@ const AdvView : React.FC =  () => {
             <h1>{advInfo.content.adv_title}</h1>
             <h3>Content</h3>
             <table className="advViewTable">
+                <colgroup>
+                    <col className="col1"></col>
+                </colgroup>
                 <thead>
                     <th>상세 내용</th>
                     <th>모집 악기</th>
                     <th>모집 기한</th>
-                    <th></th>
                 </thead>
                     <tr>
                         <td>{advInfo.content.adv_content}</td>
