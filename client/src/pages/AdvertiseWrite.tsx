@@ -8,6 +8,7 @@ const AdvertiseWrite: React.FC =  () => {
         
         place:'',
         instrument:'',
+        number:'',
         date:'',
         title:'',
         content:'',
@@ -32,7 +33,7 @@ const AdvertiseWrite: React.FC =  () => {
                     
                 </thead>
                     <tr>
-                        <th><input value={userInput.title} onChange={(e)=>{controlInputValue(e, 'title')}}></input></th>
+                        <td><input value={userInput.title} onChange={(e)=>{controlInputValue(e, 'title')}}></input></td>
                     </tr>
             </table>
             <table className="advWriteTable">
@@ -42,7 +43,7 @@ const AdvertiseWrite: React.FC =  () => {
                     </tr>        
                 </thead>
                     <tr>
-                        <th><textarea value={userInput.content} onChange={(e)=>{controlInputValue(e, 'content')}}></textarea></th>
+                        <td><textarea value={userInput.content} onChange={(e)=>{controlInputValue(e, 'content')}}></textarea></td>
                     </tr>
             </table>
             <table className="advWriteTable">
@@ -50,6 +51,7 @@ const AdvertiseWrite: React.FC =  () => {
                     <tr>
                         <th>공연 장소</th>
                         <th>모집 악기</th>
+                        <th>모집 인원</th>
                         <th>모집 기한</th>
                     </tr>
                 </thead>
@@ -64,6 +66,7 @@ const AdvertiseWrite: React.FC =  () => {
                                 <option value="flute">플룻</option>
                             </select>
                         </th>
+                        <th><input type="text" value={userInput.number} onChange={(e)=>{controlInputValue(e, 'number')}}></input></th>
                         <th><input type="date" value={userInput.date} onChange={(e)=>{controlInputValue(e, 'date')}}></input></th>
                     </tr>
             </table>

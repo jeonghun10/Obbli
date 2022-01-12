@@ -23,8 +23,7 @@ const Pagination: React.FC<PageProps> =  ({postsPerPage, totalPosts, paginate} :
                 
                 return (
                     <ul>
-                        <li className="page-link" onClick={()=>{paginate(el)}}><span>{el}</span></li>
-                        
+                        <li className="page-link" onClick={()=>{paginate(el)}}><span >{el}</span></li>
                     </ul>
                 )
             })}

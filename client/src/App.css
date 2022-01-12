@@ -255,7 +255,7 @@ Table tr td {
   table-layout: fixed; }
 
 .advViewTable .col1 {
-  width: 60%; }
+  width: 50%; }
 
 .advListTable tr:hover {
   background-color: #eee; }

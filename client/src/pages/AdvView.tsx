@@ -18,7 +18,8 @@ const AdvView : React.FC =  () => {
             adv_created_at:'2021-01-10',
             org_review_comment:['여기는 음악 맛집 입니다!','밥이 맛있어요!', '정말 맛있어요!!!'],
             org_review_rating:['★★★★★','★★★','★★★★'],
-            position:'Violine'
+            position_name:'Violine',
+            position_number:'2명'
         }
     })
     const [isAdmin, setIsAdmin] = useState(true);
@@ -35,11 +36,13 @@ const AdvView : React.FC =  () => {
                 <thead>
                     <th>상세 내용</th>
                     <th>모집 악기</th>
+                    <th>모집 인원</th>
                     <th>모집 기한</th>
                 </thead>
                     <tr>
                         <td>{advInfo.content.adv_content}</td>
-                        <td>{advInfo.content.position}</td>
+                        <td>{advInfo.content.position_name}</td>
+                        <td>{advInfo.content.position_number}</td>
                         <td>{advInfo.content.adv_created_at}</td>
                         <td><button type="button" className="btn">지원하기</button></td>
                     </tr>
