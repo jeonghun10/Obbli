@@ -42,7 +42,6 @@ function App() {
             <Route path="/mypageperson" element={<MypagePerson {... {userState, setUserState }}/>} />
             <Route path="/mypageorg" element={<MypageOrg {... {userState, setUserState }}/>} />
             <Route path="advert" element={<Advertise/>}></Route>
-            <Route path="sign-in" element={<SignIn {... {isModalVisible, setIsModalVisible, setIsLogin}} />}/>
             <Route path="advert/:uuid" element={<AdvView />} />
             <Route path="advert/write" element={<AdvertiseWrite />} />
           </Route>

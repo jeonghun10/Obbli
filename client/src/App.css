@@ -54,162 +54,162 @@ footer {
   width: 100%; }
 
 .socialLoginNone {
-display: none; }
+  display: none; }
 
 .star-rating {
-display: flex;
-flex-direction: row-reverse;
-font-size: 2.25rem;
-line-height: 2.5rem;
-justify-content: space-around;
-padding: 0 0.2em;
-text-align: center;
-width: 5em; }
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  justify-content: space-around;
+  padding: 0 0.2em;
+  text-align: center;
+  width: 5em; }
 
 .star-rating input {
-display: none; }
+  display: none; }
 
 .star-rating label {
--webkit-text-fill-color: transparent;
--webkit-text-stroke-width: 2.3px;
--webkit-text-stroke-color: #2b2a29;
-cursor: pointer; }
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2.3px;
+  -webkit-text-stroke-color: #2b2a29;
+  cursor: pointer; }
 
 .star-rating :checked ~ label {
--webkit-text-fill-color: gold; }
+  -webkit-text-fill-color: gold; }
 
 .star-rating label:hover,
 .star-rating label:hover ~ label {
--webkit-text-fill-color: #fff58c; }
+  -webkit-text-fill-color: #fff58c; }
 
 .reviewItemWrap {
-display: flex;
-width: 160px;
-height: 150px;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-border-style: solid;
-margin: 5px;
-padding-top: 10px; }
+  display: flex;
+  width: 160px;
+  height: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-style: solid;
+  margin: 5px;
+  padding-top: 10px; }
 
 .reviewStars {
-width: 146.7px; }
+  width: 146.7px; }
 
 .star-ratings {
-color: #aaa9a9;
-position: relative;
-unicode-bidi: bidi-override;
-width: max-content;
--webkit-text-fill-color: transparent;
-/* Will override color (regardless of order) */
--webkit-text-stroke-width: 1.3px;
--webkit-text-stroke-color: #2b2a29; }
+  color: #aaa9a9;
+  position: relative;
+  unicode-bidi: bidi-override;
+  width: max-content;
+  -webkit-text-fill-color: transparent;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: #2b2a29; }
 
 .star-ratings-fill {
-color: #fff58c;
-padding: 0;
-position: absolute;
-z-index: 1;
-display: flex;
-overflow: hidden;
--webkit-text-fill-color: gold;
-font-size: 1.5rem;
-margin-left: 12px; }
+  color: #fff58c;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  -webkit-text-fill-color: gold;
+  font-size: 1.5rem;
+  margin-left: 12px; }
 
 .star-ratings-base {
-z-index: 0;
-padding: 0;
-font-size: 1.5rem;
-margin-left: 12px; }
+  z-index: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  margin-left: 12px; }
 
 .reviewComment {
-white-space: pre-line; }
+  white-space: pre-line; }
 
 .showMore {
-color: rgba(0, 0, 0, 0.4);
-margin-top: 10px;
-font-size: 13px; }
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  font-size: 13px; }
 
 .reviewList {
-display: flex;
-list-style: none; }
+  display: flex;
+  list-style: none; }
 
 .mypageWrap {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-height: 80vh; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh; }
 
 .mypageProfileWrap {
-display: flex;
-width: 100%;
-height: 30vh;
-flex-direction: row;
-justify-content: space-around;
-align-items: center; }
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
 
 .mypageMenuWrap {
-display: flex;
-height: 40vh;
-width: 100%;
-flex-direction: column;
-align-items: center; }
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center; }
 
 .mypageProfile {
-display: flex;
-height: 25vh;
-flex-direction: column;
-justify-content: space-around;
-align-items: center; }
+  display: flex;
+  height: 25vh;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
 
 .profileImg {
-height: 15vh;
-width: 15vh;
-border-radius: 100%; }
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100%; }
 
 .mypageHistoryWrap {
-width: 70%; }
+  width: 70%; }
 
 .userInfoWrap {
-display: flex;
-justify-content: space-around; }
+  display: flex;
+  justify-content: space-around; }
 
 .mypageInfoName {
-padding: 3px;
-width: 30vh; }
+  padding: 3px;
+  width: 30vh; }
 
 .mypageInfo {
-padding: 3px;
-width: 30vh;
-font-weight: bold; }
+  padding: 3px;
+  width: 30vh;
+  font-weight: bold; }
 
 .userHistory {
-height: 15vh;
-overflow-y: scroll;
-scroll-behavior: smooth;
-padding: 10px; }
+  height: 15vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding: 10px; }
 
 .mypageNav {
-width: 95%;
-padding: 10px; }
+  width: 95%;
+  padding: 10px; }
 
 .mypageBtu {
-padding: 5px; }
+  padding: 5px; }
 
 .mypageMenu {
-height: 100%;
-width: 100%; }
+  height: 100%;
+  width: 100%; }
 
 .App {
-height: 100vh; }
+  height: 100vh; }
 
 nav {
-position: fixed;
-top: 0;
-left: 0;
-right: 0; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
 
 .body {
   margin-top: 10vh; }
@@ -218,10 +218,12 @@ section {
   position: relative;
   width: 100%;
   height: 100vh; }
-.advList {
 
 footer {
   position: relative; }
+
+body {
+  margin-top: 10vh; }
 
 .advertise {
   margin: 0px 20px;
@@ -275,6 +277,17 @@ Table tr td {
 .advViewTable {
   margin-bottom: 4rem; }
 
+.advViewTable thead {
+  background-color: rgba(0, 0, 0, 0.803);
+  height: 30px;
+  color: white; }
+
+.advViewTable tr th {
+  border-radius: 5px;
+  padding: 0px 40px;
+  height: 30px;
+  white-space: pre-line; }
+
 .advertiseWrite {
   margin: 0px 20px;
   width: 70rem;
@@ -314,7 +327,8 @@ input {
 .location {
   width: 70rem;
   height: 400px;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  margin-bottom: 4rem; }
 
 .pagination {
   text-align: center; }
