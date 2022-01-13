@@ -55,16 +55,10 @@ const AdvMap: React.FC<AddressProps> =  (props:AddressProps) => {
             });
         }
 
-        
-
-        
-
 
 
         
     }, []);
-
-        
 
     console.log(props.org_address)
 

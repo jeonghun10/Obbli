@@ -18,7 +18,7 @@ const advertList = {
   get: async (req, res): Promise<void> => {
     //게시글 가져오기
     const advertList = await Advert.createQueryBuilder()
-      .select(['title', 'location', 'org.name as org_name', 'active_until'])
+      .select(['Advert.uuid as uuid', 'title', 'location', 'org.name as org_name', 'active_until'])
       .innerJoin('Org', 'org')
       .execute();
     // const advartList = await Advert.find({
@@ -78,6 +78,7 @@ const Mainadvert = {
     return res.status(200).json(data);
 
   },
+  
   post: async (req, res):Promise<void> => {
 
     //게시글 작성하기
