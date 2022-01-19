@@ -226,6 +226,9 @@ section {
   width: 100%;
   height: 100vh; }
 
+footer {
+  position: relative; }
+
 body {
   margin-top: 10vh; }
 
@@ -253,15 +256,20 @@ Table tr td {
   text-align: center;
   border-bottom: 1px solid #ccc; }
 
-.advMapTable td {
-  background-color: #fff;
-  color: #000; }
-
 .advViewTable {
   table-layout: fixed; }
 
 .advViewTable .col1 {
   width: 50%; }
+
+.advViewbtn button {
+  float: right;
+  margin: 0 5px;
+  background-color: #000;
+  outline: 0; }
+
+.advwritebtn {
+  float: right; }
 
 .advListTable tr:hover {
   background-color: #eee; }
@@ -278,20 +286,6 @@ Table tr td {
   width: 70rem;
   padding: 10px 20px; }
 
-.advViewTable {
-  margin-bottom: 4rem; }
-
-.advViewTable thead {
-  background-color: rgba(0, 0, 0, 0.803);
-  height: 30px;
-  color: white; }
-
-.advViewTable tr th {
-  border-radius: 5px;
-  padding: 0px 40px;
-  height: 30px;
-  white-space: pre-line; }
-
 .advertiseWrite {
   margin: 0px 20px;
   width: 70rem;
@@ -300,14 +294,18 @@ Table tr td {
 .advWriteTable {
   margin-bottom: 4rem; }
 
-.advwritebtn {
-  float: right; }
+.btn {
+  color: #444;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer; }
 
 button {
+  cursor: pointer;
   background-color: #036;
   color: white;
   width: 7rem;
-  border-radius: 20px;
   font-size: 1rem;
   font-weight: bold; }
 
@@ -327,6 +325,17 @@ input {
 
 .advMap {
   margin-bottom: 4rem; }
+
+.advMapFilter {
+  float: left; }
+
+.advMapFilter .location {
+  height: 70vh; }
+
+.advMapFilter .View {
+  margin-left: 20px;
+  width: 30vw;
+  height: 70vh; }
 
 .location {
   width: 70rem;
@@ -357,3 +366,8 @@ input {
 .pagination ul li:active {
   color: white;
   background-color: #036; }
+
+#map {
+  width: 300px;
+  height: 300px;
+  margin-top: 10px; }

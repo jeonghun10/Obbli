@@ -16,13 +16,17 @@ const AdvFilter: React.FC =  () => {
     useEffect(() => {
       // axios.get('http://api.obb.li/advert')
       axios.get('/advert')
-          .then((resp) => { setAdverts(resp.data); });
+          .then((resp) => { 
+              const result = resp.data.map((el: any)=>{
+                return {...el, visible:false}
+              })
+              setAdverts(result) });
     }, [])
     
     return(
         <div className="adverFilter">
             {
-                adverts.length===0 ? <div>아직 작성된 글이 없습니다.</div> : <AdvMapFilter adverts={ adverts }/>
+                adverts.length===0 ? <div>아직 작성된 글이 없습니다.</div> : <AdvMapFilter adverts={ adverts } setAdverts={setAdverts}/>
             }
 
             {
