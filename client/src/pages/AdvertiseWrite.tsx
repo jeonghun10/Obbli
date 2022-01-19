@@ -38,7 +38,7 @@ const AdvertiseWrite: React.FC =  () => {
     
 
     function sample5_execDaumPostcode() {
-        const mapContainer = document.getElementById('map'), // 지도를 표시할 div
+        const mapContainer = document.querySelector('.inputMap'), // 지도를 표시할 div
         mapOption = {
             center: new kakao.maps.LatLng(37.537187, 127.005476), // 지도의 중심좌표
             level: 5 // 지도의 확대 레벨
@@ -170,12 +170,12 @@ const AdvertiseWrite: React.FC =  () => {
                     <tr>
                       {/* <td><input type="text" value={userInput.location} onChange={(e)=>{controlInputValue(e, 'location')}}></input></td> */}
                       <td>
-                        <input type="text" id="sample5_address" placeholder="주소" value={userLocation}/>
-                        <input type="button"  value="주소 검색" onClick={()=>{sample5_execDaumPostcode()}}/>
+                        <input className ="inputAddress" type="text" id="sample5_address" placeholder="주소" value={userLocation}/>
+                        <button className="inputAddressbtn" type="button"  value="주소 검색" onClick={()=>{sample5_execDaumPostcode()}}>검색</button>
                       </td>
                     </tr>
                         <tr>
-                        <td><div id="map" ></div></td>    
+                        <td><div className="inputMap" ></div></td>    
                         </tr>
                 </tbody>
                     {/* <tr>

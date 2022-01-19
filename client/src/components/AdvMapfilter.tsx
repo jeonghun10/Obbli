@@ -10,7 +10,7 @@ export default function AdvMapFilter ({ adverts, setAdverts }: { adverts: any ; 
     useEffect(() => { mapScript() }, [adverts]);
 
     const mapScript = () => {
-        const container = document.querySelector('.location');
+        const container = document.querySelector('.advMapFilter_location');
         const options = { center: new kakao.maps.LatLng(33.450701, 126.570667) };
         const map = new kakao.maps.Map(container, options);
         const clusterer = new kakao.maps.MarkerClusterer({
@@ -66,7 +66,7 @@ export default function AdvMapFilter ({ adverts, setAdverts }: { adverts: any ; 
 
     return(
         <div className="advMapFilter">
-            <div  className="advMapFilter location"></div>
+            <div className="advMapFilter_location"></div>
             { userInfo.length===0 ? <AdvMapFilterView userInfo={adverts}/>:<AdvMapFilterView userInfo={userInfo}/> }
        </div>
     );

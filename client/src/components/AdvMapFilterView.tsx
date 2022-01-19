@@ -9,7 +9,7 @@ const  kakao  = (window as any).kakao;
 const AdvMapFilterView =  ({userInfo}:any) => {
 
     return(
-        <div className="advMapFilter View">
+        <div className="advMapFilter_view">
             <h3>Advertise</h3>
             <table className="advListTable">
                 <thead>
